@@ -40,7 +40,7 @@ namespace NetSDL_GLClient
 
         private void btnPicking_Click(object sender, EventArgs e)
         {
-            string fileName = "testWinform.exe";
+            string fileName = "Picking.exe";
             //string fileName = @"D:\project\Pr13Test\testWinform\bin\Debug\testWinform.exe";
             fileName = Getpath() + fileName;
             string[] args = new string[2];
