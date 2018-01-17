@@ -41,6 +41,7 @@
             // 
             // coboxWarehouse
             // 
+            this.coboxWarehouse.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.coboxWarehouse.Font = new System.Drawing.Font("宋体", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.coboxWarehouse.FormattingEnabled = true;
             this.coboxWarehouse.Location = new System.Drawing.Point(305, 32);
@@ -50,6 +51,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("宋体", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.Location = new System.Drawing.Point(147, 40);
@@ -60,6 +62,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.Controls.Add(this.btnPutaway);
             this.groupBox1.Controls.Add(this.btnReceive);
             this.groupBox1.Controls.Add(this.btnPacking);
@@ -75,6 +78,7 @@
             // 
             // btnPutaway
             // 
+            this.btnPutaway.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnPutaway.Font = new System.Drawing.Font("宋体", 25F);
             this.btnPutaway.Location = new System.Drawing.Point(152, 289);
             this.btnPutaway.Name = "btnPutaway";
@@ -85,6 +89,7 @@
             // 
             // btnReceive
             // 
+            this.btnReceive.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnReceive.Font = new System.Drawing.Font("宋体", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnReceive.Location = new System.Drawing.Point(152, 220);
             this.btnReceive.Name = "btnReceive";
@@ -95,6 +100,7 @@
             // 
             // btnPacking
             // 
+            this.btnPacking.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnPacking.Font = new System.Drawing.Font("宋体", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnPacking.Location = new System.Drawing.Point(152, 153);
             this.btnPacking.Name = "btnPacking";
@@ -105,6 +111,7 @@
             // 
             // btnPicking
             // 
+            this.btnPicking.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnPicking.Font = new System.Drawing.Font("宋体", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnPicking.Location = new System.Drawing.Point(152, 87);
             this.btnPicking.Name = "btnPicking";
@@ -112,9 +119,11 @@
             this.btnPicking.TabIndex = 2;
             this.btnPicking.Text = "PICKING";
             this.btnPicking.UseVisualStyleBackColor = true;
+            this.btnPicking.Click += new System.EventHandler(this.btnPicking_Click);
             // 
             // llblBack
             // 
+            this.llblBack.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.llblBack.AutoSize = true;
             this.llblBack.Font = new System.Drawing.Font("宋体", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.llblBack.LinkColor = System.Drawing.Color.Black;

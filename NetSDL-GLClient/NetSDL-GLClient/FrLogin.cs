@@ -20,9 +20,9 @@ namespace NetSDL_GLClient
       
         public FrLogin()
         {
-           // this.WindowState = FormWindowState.Maximized; 
+            this.WindowState = FormWindowState.Maximized; 
             InitializeComponent();
-            button1.Hide();
+            //button1.Hide();
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -57,23 +57,6 @@ namespace NetSDL_GLClient
             txtPwd.Text = "";
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            string fileName = @"D:\project\Pr13Test\testWinform\bin\Debug\testWinform.exe";
-            string[] args = new string[2];
-            args[0]="aa";
-            args[1]="bb";
-            try
-            {
-                Tools.StartProcess(fileName,args);
-            }catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
-              
-              
-            
-        }
+       
     }
 }
