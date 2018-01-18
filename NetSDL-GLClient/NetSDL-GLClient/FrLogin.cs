@@ -27,9 +27,9 @@ namespace NetSDL_GLClient
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            txtPjNO.Text = "lillybee";
-            txtUser.Text = "gladmin";
-            txtPwd.Text = "111";
+            //txtPjNO.Text = "lillybee";
+            //txtUser.Text = "gladmin";
+            //txtPwd.Text = "111";
            
             string pjNO = txtPjNO.Text.Trim();
             string user = txtUser.Text.Trim();
@@ -39,7 +39,7 @@ namespace NetSDL_GLClient
             ret=logOp.GetToken(pjNO,user,pwd);
             if (ret != 0)
             {
-                MessageBox.Show("Log in agin please!");
+                MessageBox.Show("Logon failure,Login agin please!");
             }
             else
             {
