@@ -23,13 +23,14 @@ namespace NetSDL_GLClient
             this.WindowState = FormWindowState.Maximized; 
             InitializeComponent();
             //button1.Hide();
+            txtPjNO.Text = "lillybee";
+            txtUser.Text = "gladmin";
+            txtPwd.Text = "111";
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            //txtPjNO.Text = "lillybee";
-            //txtUser.Text = "gladmin";
-            //txtPwd.Text = "111";
+           
            
             string pjNO = txtPjNO.Text.Trim();
             string user = txtUser.Text.Trim();
@@ -46,15 +47,23 @@ namespace NetSDL_GLClient
                 FrMenu frMenu = new FrMenu();
                 frMenu.refresh += RefreshForm;
                 frMenu.Show();
+                this.Hide();
                
             }
            
         }
         public void RefreshForm()
         {
+            this.Show();
             txtPjNO.Text = "";
             txtUser.Text = "";
             txtPwd.Text = "";
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
 
        

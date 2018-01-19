@@ -63,5 +63,18 @@ namespace NetSDL_GLClient
             path = path.Substring(0, path.LastIndexOf("\\") + 1) + "exec\\";
             return path;
         }
+
+        protected override void WndProc(ref Message msg)
+        {
+            const int WM_SYSCOMMAND = 0x0112;
+            const int SC_CLOSE = 0xF060;
+
+            if (msg.Msg == WM_SYSCOMMAND && ((int)msg.WParam == SC_CLOSE))
+            {
+                Application.ExitThread();
+                return;
+            }
+            base.WndProc(ref msg);
+        }
     }
 }

@@ -42,21 +42,21 @@
             // coboxWarehouse
             // 
             this.coboxWarehouse.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.coboxWarehouse.Font = new System.Drawing.Font("宋体", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.coboxWarehouse.Font = new System.Drawing.Font("Arial Unicode MS", 28F, System.Drawing.FontStyle.Bold);
             this.coboxWarehouse.FormattingEnabled = true;
-            this.coboxWarehouse.Location = new System.Drawing.Point(305, 32);
+            this.coboxWarehouse.Location = new System.Drawing.Point(332, 46);
             this.coboxWarehouse.Name = "coboxWarehouse";
-            this.coboxWarehouse.Size = new System.Drawing.Size(369, 35);
+            this.coboxWarehouse.Size = new System.Drawing.Size(411, 58);
             this.coboxWarehouse.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("宋体", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(147, 40);
+            this.label1.Font = new System.Drawing.Font("Arial Unicode MS", 28F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(68, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(152, 27);
+            this.label1.Size = new System.Drawing.Size(237, 51);
             this.label1.TabIndex = 1;
             this.label1.Text = "Warehouse:";
             // 
@@ -70,66 +70,73 @@
             this.groupBox1.Controls.Add(this.coboxWarehouse);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("宋体", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 50);
+            this.groupBox1.Location = new System.Drawing.Point(12, 46);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(825, 352);
+            this.groupBox1.Size = new System.Drawing.Size(825, 456);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             // 
             // btnPutaway
             // 
             this.btnPutaway.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnPutaway.Font = new System.Drawing.Font("宋体", 25F);
-            this.btnPutaway.Location = new System.Drawing.Point(152, 289);
+            this.btnPutaway.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.btnPutaway.Font = new System.Drawing.Font("Arial Unicode MS", 28F, System.Drawing.FontStyle.Bold);
+            this.btnPutaway.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnPutaway.Location = new System.Drawing.Point(77, 371);
             this.btnPutaway.Name = "btnPutaway";
-            this.btnPutaway.Size = new System.Drawing.Size(522, 45);
+            this.btnPutaway.Size = new System.Drawing.Size(666, 59);
             this.btnPutaway.TabIndex = 5;
             this.btnPutaway.Text = "PUTAWAY";
-            this.btnPutaway.UseVisualStyleBackColor = true;
+            this.btnPutaway.UseVisualStyleBackColor = false;
             // 
             // btnReceive
             // 
             this.btnReceive.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnReceive.Font = new System.Drawing.Font("宋体", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnReceive.Location = new System.Drawing.Point(152, 220);
+            this.btnReceive.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.btnReceive.Font = new System.Drawing.Font("Arial Unicode MS", 28F, System.Drawing.FontStyle.Bold);
+            this.btnReceive.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnReceive.Location = new System.Drawing.Point(77, 290);
             this.btnReceive.Name = "btnReceive";
-            this.btnReceive.Size = new System.Drawing.Size(522, 45);
+            this.btnReceive.Size = new System.Drawing.Size(666, 59);
             this.btnReceive.TabIndex = 4;
             this.btnReceive.Text = "RECEIVE";
-            this.btnReceive.UseVisualStyleBackColor = true;
+            this.btnReceive.UseVisualStyleBackColor = false;
             // 
             // btnPacking
             // 
             this.btnPacking.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnPacking.Font = new System.Drawing.Font("宋体", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnPacking.Location = new System.Drawing.Point(152, 153);
+            this.btnPacking.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.btnPacking.Font = new System.Drawing.Font("Arial Unicode MS", 28F, System.Drawing.FontStyle.Bold);
+            this.btnPacking.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnPacking.Location = new System.Drawing.Point(77, 215);
             this.btnPacking.Name = "btnPacking";
-            this.btnPacking.Size = new System.Drawing.Size(522, 45);
+            this.btnPacking.Size = new System.Drawing.Size(666, 59);
             this.btnPacking.TabIndex = 3;
             this.btnPacking.Text = "PACKING";
-            this.btnPacking.UseVisualStyleBackColor = true;
+            this.btnPacking.UseVisualStyleBackColor = false;
             // 
             // btnPicking
             // 
             this.btnPicking.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnPicking.Font = new System.Drawing.Font("宋体", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnPicking.Location = new System.Drawing.Point(152, 87);
+            this.btnPicking.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.btnPicking.Font = new System.Drawing.Font("Arial Unicode MS", 28F, System.Drawing.FontStyle.Bold);
+            this.btnPicking.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnPicking.Location = new System.Drawing.Point(77, 140);
             this.btnPicking.Name = "btnPicking";
-            this.btnPicking.Size = new System.Drawing.Size(522, 45);
+            this.btnPicking.Size = new System.Drawing.Size(666, 59);
             this.btnPicking.TabIndex = 2;
             this.btnPicking.Text = "PICKING";
-            this.btnPicking.UseVisualStyleBackColor = true;
+            this.btnPicking.UseVisualStyleBackColor = false;
             this.btnPicking.Click += new System.EventHandler(this.btnPicking_Click);
             // 
             // llblBack
             // 
-            this.llblBack.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.llblBack.AutoSize = true;
-            this.llblBack.Font = new System.Drawing.Font("宋体", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.llblBack.Font = new System.Drawing.Font("Arial Unicode MS", 28F, System.Drawing.FontStyle.Bold);
             this.llblBack.LinkColor = System.Drawing.Color.Black;
             this.llblBack.Location = new System.Drawing.Point(12, 9);
             this.llblBack.Name = "llblBack";
-            this.llblBack.Size = new System.Drawing.Size(68, 27);
+            this.llblBack.Size = new System.Drawing.Size(110, 51);
             this.llblBack.TabIndex = 3;
             this.llblBack.TabStop = true;
             this.llblBack.Text = "Back";
@@ -139,7 +146,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(849, 430);
+            this.ClientSize = new System.Drawing.Size(849, 545);
             this.Controls.Add(this.llblBack);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrMenu";
