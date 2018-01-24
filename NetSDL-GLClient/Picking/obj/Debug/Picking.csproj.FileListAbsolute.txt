@@ -1,0 +1,12 @@
+D:\project\GetPr\GLClient\NetSDL-GLClient\Picking\bin\Debug\Picking.exe.config
+D:\project\GetPr\GLClient\NetSDL-GLClient\Picking\bin\Debug\Picking.exe
+D:\project\GetPr\GLClient\NetSDL-GLClient\Picking\bin\Debug\Picking.pdb
+D:\project\GetPr\GLClient\NetSDL-GLClient\Picking\obj\Debug\Picking.FrPicking.resources
+D:\project\GetPr\GLClient\NetSDL-GLClient\Picking\obj\Debug\Picking.Properties.Resources.resources
+D:\project\GetPr\GLClient\NetSDL-GLClient\Picking\obj\Debug\Picking.csproj.GenerateResource.Cache
+D:\project\GetPr\GLClient\NetSDL-GLClient\Picking\obj\Debug\Picking.exe
+D:\project\GetPr\GLClient\NetSDL-GLClient\Picking\obj\Debug\Picking.pdb
+D:\project\GetPr\GLClient\NetSDL-GLClient\Picking\bin\Debug\NLog.dll
+D:\project\GetPr\GLClient\NetSDL-GLClient\Picking\bin\Debug\NLog.config
+D:\project\GetPr\GLClient\NetSDL-GLClient\Picking\obj\Debug\Picking.FrPickingScanGroup.resources
+D:\project\GetPr\GLClient\NetSDL-GLClient\Picking\obj\Debug\Picking.FrStartPickingGroup.resources
