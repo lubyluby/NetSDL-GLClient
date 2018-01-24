@@ -15,11 +15,12 @@ namespace NetSDL_GLClient
     {
         public delegate void RefreshDelegate();
         public event RefreshDelegate refresh;
+      
         public FrMenu()
         {
+            LoginOp op = new LoginOp();
             this.WindowState = FormWindowState.Maximized; 
             InitializeComponent();
-            LoginOp op = new LoginOp();
             DataTable dt= op.GetWareHouse();
             if (dt.Rows.Count != 0)
             {
@@ -40,20 +41,26 @@ namespace NetSDL_GLClient
 
         private void btnPicking_Click(object sender, EventArgs e)
         {
-            string fileName = "Picking.exe";
+            string token = LoginOp.token;
+            string whId= coboxWarehouse.SelectedValue.ToString();
+
+            string fileName = "Picking\\Picking.exe";
             //string fileName = @"D:\project\Pr13Test\testWinform\bin\Debug\testWinform.exe";
             fileName = Getpath() + fileName;
+           
             string[] args = new string[2];
-            args[0] = "aa";
-            args[1] = "bb";
+            args[0] = token;
+            args[1] = whId;
             try
             {
                 Tools.StartProcess(fileName, args);
+                this.Hide();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+           
         }
 
         private static string Getpath()
@@ -76,5 +83,7 @@ namespace NetSDL_GLClient
             }
             base.WndProc(ref msg);
         }
+
+       
     }
 }

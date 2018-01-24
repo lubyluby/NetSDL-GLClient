@@ -151,7 +151,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "FrMenu";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
-            this.Text = "FrMenu";
+            this.Text = "Menu";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
