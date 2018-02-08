@@ -29,4 +29,3 @@ D:\project\GetPr\GLClient\NetSDL-GLClient\Picking\bin\Debug\NPOI.OpenXmlFormats.
 D:\project\GetPr\GLClient\NetSDL-GLClient\Picking\bin\Debug\NPOI.OpenXml4Net.dll
 D:\project\GetPr\GLClient\NetSDL-GLClient\Picking\bin\Debug\System.Data.SQLite.xml
 D:\project\GetPr\GLClient\NetSDL-GLClient\Picking\bin\Debug\NPOI.xml
-D:\project\GetPr\GLClient\NetSDL-GLClient\Picking\obj\Debug\Picking.csprojResolveAssemblyReference.cache

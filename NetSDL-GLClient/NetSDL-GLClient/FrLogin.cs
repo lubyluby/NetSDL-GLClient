@@ -26,9 +26,9 @@ namespace NetSDL_GLClient
             //txtPjNO.Text = "lillybee";
             //txtUser.Text = "gladmin";
             //txtPwd.Text = "111";
-            txtPjNO.Text = "sclkeeler";
-            txtUser.Text = "user05";
-            txtPwd.Text = "Fusion2017";
+            //txtPjNO.Text = "sclkeeler";
+            //txtUser.Text = "user05";
+            //txtPwd.Text = "Fusion2017";
         }
 
         private void btnLogin_Click(object sender, EventArgs e)

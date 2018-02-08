@@ -23,8 +23,8 @@ namespace Picking
             this.btnPickingSlip.Enabled = false;
             this.btnStoreAllocList.Enabled = false;
             dataGridView1.AllowUserToAddRows = false;
-            txtWave.Text = "NO101";
-            txtOperateJob.Text = "N0801";
+            //txtWave.Text = "NO101";
+            //txtOperateJob.Text = "N0801";
             
         }
        

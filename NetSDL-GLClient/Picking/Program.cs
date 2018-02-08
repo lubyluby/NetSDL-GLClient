@@ -14,12 +14,12 @@ namespace Picking
         [STAThread]
         static void Main(string[] args)
         {
-            if (args.Length == 0)
-            {
-                args = new string[2];
-                args[0] = "938562417841530794";
-                args[1] = "8211410";
-            }
+            //if (args.Length == 0)
+            //{
+            //    args = new string[2];
+            //    args[0] = "938562417841530794";
+            //    args[1] = "8211410";
+            //}
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FrPicking(args));

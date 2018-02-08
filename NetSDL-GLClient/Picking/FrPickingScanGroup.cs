@@ -51,20 +51,52 @@ namespace Picking
         private void btnNextBin_Click(object sender, EventArgs e)
         {
             currentIndex = currentIndex + 1;
-            currentIndex=op.GetCurrentIndex(currentIndex,list.Count);
-            if (list[currentIndex].Count != 0 && currentIndex < list.Count)
+            Button btn = (Button)sender;
+            //
+            if (btn.Text.Equals("Confirm"))
             {
-                txtBin.Text = list[currentIndex][0].BinLoc;
-                txtWave.Text = list[currentIndex][0].PickingGroupNo;
-                txtLoc.Text = list[currentIndex][0].ZoneArea;
-                txtPickingOperateJob.Text = list[currentIndex][0].PickingOperateNo;
-                txtShippingOrder.Text = list[currentIndex][0].BatchNo;
-                FillDataGridViewWithDataSource(dataGridView1, list[currentIndex]);
+
+                if (!op.CheckScan(list))
+                {
+                    MessageBox.Show(" Picking not finished!");
+                }
+                else
+                {
+                    MessageBox.Show("Picking finished!");
+                    this.Close();
+                    FrStartPickingGroup frStartPickingGroup = new FrStartPickingGroup(this.args);
+                    frStartPickingGroup.Show();
+                   
+                }
+            }
+            else
+            {
+                currentIndex = op.GetCurrentIndex(currentIndex, list.Count);
+                if (currentIndex >= list.Count-1)
+                {
+                   
+                    btn.Text = "Confirm";
+                }
+                else
+                {
+                    btn.Text = "Next Bin";
+                   
+                }
+                if (list[currentIndex].Count != 0 && currentIndex < list.Count)
+                {
+                    txtBin.Text = list[currentIndex][0].BinLoc;
+                    txtWave.Text = list[currentIndex][0].PickingGroupNo;
+                    txtLoc.Text = list[currentIndex][0].ZoneArea;
+                    txtPickingOperateJob.Text = list[currentIndex][0].PickingOperateNo;
+                    txtShippingOrder.Text = list[currentIndex][0].BatchNo;
+                    FillDataGridViewWithDataSource(dataGridView1, list[currentIndex]);
+                }
             }
         }
 
         private void btnBack_Click(object sender, EventArgs e)
         {
+            btnNextBin.Text = "Next Bin";
             currentIndex = currentIndex - 1;
             currentIndex = op.GetCurrentIndex(currentIndex, list.Count);
             if (list[currentIndex].Count != 0 && currentIndex < list.Count )
@@ -108,23 +140,30 @@ namespace Picking
             {
                string ss= dataGridView1.Rows[0].Cells[1].Value.ToString();
                int row = dataGridView1.Rows.Count;
+               bool flag = false;
                for (int i = 0; i < row; i++)
                {
                    string barcode = dataGridView1.Rows[i].Cells[1].Value.ToString();
+                  
                    if (barcode.Equals(scanBarcode))
                    {
+                       flag = true;
                        int pickQty=Convert.ToInt32(dataGridView1.Rows[i].Cells[4].Value);
                        int qty=Convert.ToInt32(dataGridView1.Rows[i].Cells[5].Value);
                        int scanQty = qty + 1;
                        if (scanQty > pickQty)
                        {
-                           MessageBox.Show("Scan quantity count greater than picking quantity");
+                           MessageBox.Show("Scan quantity count greater than picking quantity!");
                        }
                        else
                        {
                            dataGridView1.Rows[i].Cells[5].Value = scanQty;
                        }
                    }
+               }
+               if (!flag)
+               {
+                   MessageBox.Show("Barcode Not found!");
                }
             }  
         }
