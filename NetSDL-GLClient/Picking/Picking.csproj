@@ -33,10 +33,23 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Ami.Core">
+      <HintPath>C:\AmiDll20G2\Ami.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Ami.Shell">
+      <HintPath>C:\AmiDll20G2\Ami.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="AmiApiSDK">
+      <HintPath>C:\AmiDll20G2\AmiApiSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="AmiWmsSDK">
+      <HintPath>C:\AmiDll20G2\AmiWmsSDK.dll</HintPath>
+    </Reference>
     <Reference Include="NLog">
       <HintPath>C:\AmiDll20G2\NLog.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -69,7 +82,11 @@
     <Compile Include="FrStartPickingGroup.Designer.cs">
       <DependentUpon>FrStartPickingGroup.cs</DependentUpon>
     </Compile>
+    <Compile Include="Operator\BaseManage.cs" />
+    <Compile Include="Operator\PickingByGroup.cs" />
+    <Compile Include="Operator\PickingScanOp.cs" />
     <Compile Include="Operator\ProcessExc.cs" />
+    <Compile Include="Operator\StartPickingGoupOp.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrPicking.resx">

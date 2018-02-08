@@ -1,4 +1,5 @@
 ﻿using AmiBizSDK.Interface.Shell;
+using Newtonsoft.Json;
 using NLog;
 using System;
 using System.Collections.Generic;
@@ -35,6 +36,7 @@ namespace NetSDL_GLClient.Operator
         {
             DataTable dt = new DataTable();
             AmiBizSDK.Request.AppQuery.User.QyUserWh request = new  AmiBizSDK.Request.AppQuery.User.QyUserWh();
+            string str=JsonConvert.SerializeObject(request);
             AmiApiSDK.Response.BaseTableResponse res = client.Execute(request);
             if (res.ErrorCode != 0)
             {

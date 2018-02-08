@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.linkBack = new System.Windows.Forms.LinkLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnNextBin = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
@@ -50,10 +51,22 @@
             this.lblPickingOperateJob = new System.Windows.Forms.Label();
             this.txtWave = new System.Windows.Forms.TextBox();
             this.lblWave = new System.Windows.Forms.Label();
-            this.linkBack = new System.Windows.Forms.LinkLabel();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // linkBack
+            // 
+            this.linkBack.AutoSize = true;
+            this.linkBack.Font = new System.Drawing.Font("Arial Unicode MS", 18F, System.Drawing.FontStyle.Bold);
+            this.linkBack.LinkColor = System.Drawing.Color.Black;
+            this.linkBack.Location = new System.Drawing.Point(8, 9);
+            this.linkBack.Name = "linkBack";
+            this.linkBack.Size = new System.Drawing.Size(72, 33);
+            this.linkBack.TabIndex = 1;
+            this.linkBack.TabStop = true;
+            this.linkBack.Text = "Back";
+            this.linkBack.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkBack_LinkClicked);
             // 
             // groupBox1
             // 
@@ -91,6 +104,7 @@
             this.btnNextBin.TabIndex = 14;
             this.btnNextBin.Text = "Next Bin";
             this.btnNextBin.UseVisualStyleBackColor = false;
+            this.btnNextBin.Click += new System.EventHandler(this.btnNextBin_Click);
             // 
             // btnBack
             // 
@@ -104,6 +118,7 @@
             this.btnBack.TabIndex = 13;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // dataGridView1
             // 
@@ -160,7 +175,8 @@
             this.txtBarCode.Location = new System.Drawing.Point(23, 369);
             this.txtBarCode.Name = "txtBarCode";
             this.txtBarCode.Size = new System.Drawing.Size(413, 40);
-            this.txtBarCode.TabIndex = 11;
+            this.txtBarCode.TabIndex = 1;
+            this.txtBarCode.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtBarCode_KeyUp);
             // 
             // lblBarcode
             // 
@@ -260,7 +276,7 @@
             this.txtWave.Location = new System.Drawing.Point(19, 48);
             this.txtWave.Name = "txtWave";
             this.txtWave.Size = new System.Drawing.Size(340, 40);
-            this.txtWave.TabIndex = 1;
+            this.txtWave.TabIndex = 2;
             // 
             // lblWave
             // 
@@ -272,19 +288,6 @@
             this.lblWave.Size = new System.Drawing.Size(94, 33);
             this.lblWave.TabIndex = 0;
             this.lblWave.Text = "Wave#";
-            // 
-            // linkBack
-            // 
-            this.linkBack.AutoSize = true;
-            this.linkBack.Font = new System.Drawing.Font("Arial Unicode MS", 18F, System.Drawing.FontStyle.Bold);
-            this.linkBack.LinkColor = System.Drawing.Color.Black;
-            this.linkBack.Location = new System.Drawing.Point(8, 9);
-            this.linkBack.Name = "linkBack";
-            this.linkBack.Size = new System.Drawing.Size(72, 33);
-            this.linkBack.TabIndex = 1;
-            this.linkBack.TabStop = true;
-            this.linkBack.Text = "Back";
-            this.linkBack.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkBack_LinkClicked);
             // 
             // FrPickingScanGroup
             // 

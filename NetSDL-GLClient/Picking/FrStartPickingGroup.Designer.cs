@@ -89,8 +89,9 @@
             this.btnStartPicking.Name = "btnStartPicking";
             this.btnStartPicking.Size = new System.Drawing.Size(185, 51);
             this.btnStartPicking.TabIndex = 8;
-            this.btnStartPicking.Text = "Start Picking";
+            this.btnStartPicking.Text = "Start Picking>";
             this.btnStartPicking.UseVisualStyleBackColor = false;
+            this.btnStartPicking.Click += new System.EventHandler(this.btnStartPicking_Click);
             // 
             // btnStoreAllocList
             // 
@@ -172,6 +173,7 @@
             this.btnDataDownLoad.TabIndex = 4;
             this.btnDataDownLoad.Text = "Data DownLoad";
             this.btnDataDownLoad.UseVisualStyleBackColor = false;
+            this.btnDataDownLoad.Click += new System.EventHandler(this.btnDataDownLoad_Click);
             // 
             // txtOperateJob
             // 
@@ -180,7 +182,7 @@
             this.txtOperateJob.Location = new System.Drawing.Point(428, 95);
             this.txtOperateJob.Name = "txtOperateJob";
             this.txtOperateJob.Size = new System.Drawing.Size(340, 40);
-            this.txtOperateJob.TabIndex = 3;
+            this.txtOperateJob.TabIndex = 2;
             // 
             // lblOperateJob
             // 
@@ -190,7 +192,7 @@
             this.lblOperateJob.Location = new System.Drawing.Point(422, 49);
             this.lblOperateJob.Name = "lblOperateJob";
             this.lblOperateJob.Size = new System.Drawing.Size(163, 33);
-            this.lblOperateJob.TabIndex = 2;
+            this.lblOperateJob.TabIndex = 3;
             this.lblOperateJob.Text = "OperateJob#";
             // 
             // lblWave
@@ -212,6 +214,7 @@
             this.txtWave.Name = "txtWave";
             this.txtWave.Size = new System.Drawing.Size(340, 40);
             this.txtWave.TabIndex = 1;
+            this.txtWave.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtWave_KeyPress);
             // 
             // FrStartPickingGroup
             // 
@@ -221,7 +224,8 @@
             this.Controls.Add(this.linkBack);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrStartPickingGroup";
-            this.Text = "FrStartPickingGroup";
+            this.Text = "Start Picking";
+            this.Shown += new System.EventHandler(this.FrStartPickingGroup_Shown);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

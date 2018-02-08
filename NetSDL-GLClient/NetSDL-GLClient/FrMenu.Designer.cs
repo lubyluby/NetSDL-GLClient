@@ -44,9 +44,9 @@
             this.coboxWarehouse.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.coboxWarehouse.Font = new System.Drawing.Font("Arial Unicode MS", 28F, System.Drawing.FontStyle.Bold);
             this.coboxWarehouse.FormattingEnabled = true;
-            this.coboxWarehouse.Location = new System.Drawing.Point(332, 46);
+            this.coboxWarehouse.Location = new System.Drawing.Point(299, 46);
             this.coboxWarehouse.Name = "coboxWarehouse";
-            this.coboxWarehouse.Size = new System.Drawing.Size(411, 58);
+            this.coboxWarehouse.Size = new System.Drawing.Size(444, 58);
             this.coboxWarehouse.TabIndex = 0;
             // 
             // label1

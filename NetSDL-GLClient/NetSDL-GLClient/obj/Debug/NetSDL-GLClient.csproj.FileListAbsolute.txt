@@ -89,3 +89,4 @@ D:\project\GetPr\GLClient\NetSDL-GLClient\NetSDL-GLClient\obj\Debug\NetSDL_GLCli
 D:\project\GetPr\GLClient\NetSDL-GLClient\NetSDL-GLClient\obj\Debug\NetSDL_GLClient.FrMenu.resources
 D:\project\GetPr\GLClient\NetSDL-GLClient\NetSDL-GLClient\obj\Debug\NetSDL_GLClient.Properties.Resources.resources
 D:\project\GetPr\GLClient\NetSDL-GLClient\NetSDL-GLClient\obj\Debug\NetSDL-GLClient.csproj.GenerateResource.Cache
+D:\project\GetPr\GLClient\NetSDL-GLClient\NetSDL-GLClient\obj\Debug\NetSDL-GLClient.csprojResolveAssemblyReference.cache
